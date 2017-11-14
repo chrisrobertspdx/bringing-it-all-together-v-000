@@ -51,11 +51,11 @@ class Dog
       self.update
     else
       #duplicate?
-      sql = <<-SQL
-        SELECT  dogs (name, breed)
-        VALUES (?, ?)
-        SQL
-      DB[:conn].execute(sql, self.name, self.breed)
+      #sql = <<-SQL
+        #SELECT  dogs (name, breed)
+        #VALUES (?, ?)
+        #SQL
+      #DB[:conn].execute(sql, self.name, self.breed)
 
       sql = <<-SQL
         INSERT INTO dogs (name, breed)
