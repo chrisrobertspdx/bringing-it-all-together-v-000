@@ -68,7 +68,7 @@ class Dog
   end
 
   def self.create(name,breed)
-    Dog.new(:name = name, :breed = breed).save
+    Dog.new(name: name, breed: breed).save
   end
 
 end
